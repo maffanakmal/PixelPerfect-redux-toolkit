@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+}
+
+input,
+button {
+    font: inherit;
+    padding: 0.5rem;
+}
+
+#amountInput {
+    font-size: 1.2rem;
+}
+
+.addNumber span {
+    margin: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    max-width: 2.5em;
+}
+
+button {
+    font-size: 1.2rem;
+    margin: 0.5em 0 0.5em 0.5em;
+    min-width: 2em;
+}
+
+button:first-child {
+    margin-left: 0;
+}
