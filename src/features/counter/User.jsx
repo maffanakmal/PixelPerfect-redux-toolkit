@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'; // Fixed typo here: userEffect -> useEffect
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUser } from './userSlice';
 
-function UserComponent() { // Changed the component name to start with uppercase
+function UserComponent() {
     const userData = useSelector((state) => state.user.data);
     const isLoading = useSelector((state) => state.user.loading);
     const dispatch = useDispatch();
 
-    useEffect(() => { // Fixed typo here: userEffect -> useEffect
+    useEffect(() => {
         dispatch(fetchUser());
     }, [dispatch]);
 
@@ -18,6 +18,7 @@ function UserComponent() { // Changed the component name to start with uppercase
     console.log(userData);
 
     return (
+        <>
         <div>
             <h2>User Details</h2>
             {userData?.map((item) => (
@@ -28,7 +29,8 @@ function UserComponent() { // Changed the component name to start with uppercase
                 </div>
             ))}
         </div>
+        </>
     );
 }
 
-export default UserComponent; // Changed the export name to start with uppercase
+export default UserComponent;

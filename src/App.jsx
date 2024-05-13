@@ -11,6 +11,9 @@ function App() {
       <main className="App">
         <Counter/>
         <User/>
+        <div className='footer'>
+            <span>Made With ❤ By Pixel Perfect</span>
+        </div>
       </main>
     </>
   )
